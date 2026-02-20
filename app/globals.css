@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.disabled:disabled{
+    cursor: not-allowed;
+    background-color: rgb(192, 185, 185);
+    color: rgb(68, 65, 65);
+}
