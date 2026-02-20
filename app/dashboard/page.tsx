@@ -10,7 +10,6 @@ export default function Dashboard() {
   const [url, setUrl] = useState("");
   const router = useRouter();
 
-  /* ---------------- AUTH SYNC ---------------- */
 
   useEffect(() => {
     const setupRealtime = async () => {
@@ -146,7 +145,6 @@ export default function Dashboard() {
         </button>
       </div>
 
-      {/* Add bookmark */}
       <div className="bg-white p-4 rounded-lg shadow space-y-2">
         <input
           className="w-full border p-2 rounded"
@@ -173,7 +171,7 @@ export default function Dashboard() {
         </button>
       </div>
 
-      {/* List */}
+      
       <div className="space-y-3">
         {bookmarks.map((b) => (
           <div
