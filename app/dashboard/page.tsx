@@ -24,7 +24,7 @@ export default function Dashboard() {
             event: "*",
             schema: "public",
             table: "bookmarks",
-            filter: `user_id=eq.${user.id}`, // ⭐ IMPORTANT
+            filter: `user_id=eq.${user.id}`,
           },
           () => {
             loadBookmarks();
